@@ -598,6 +598,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local WindowTopBarLine = AddThemeObject(SetProps(MakeElement("Frame"), {
 		Size = UDim2.new(1, 0, 0, 1),
 		Position = UDim2.new(0, 0, 1, -1)
+		BackgroundTransparency = 0.8
 	}), "Stroke")
 
 	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
@@ -1025,7 +1026,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				local SliderBar = SetChildren(SetProps(MakeElement("RoundFrame", SliderConfig.Color, 0, 5), {
 					Size = UDim2.new(1, -24, 0, 26),
 					Position = UDim2.new(0, 12, 0, 30),
-					BackgroundTransparency = 0.9
+					BackgroundTransparency = 0.6
 				}), {
 					SetProps(MakeElement("Stroke"), {
 						Color = SliderConfig.Color
